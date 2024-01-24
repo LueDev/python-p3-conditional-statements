@@ -2,10 +2,14 @@
 
 def admin_login(username, password):
     # your code here
-    if((username == "admin" or username == "ADMIN") and password == "12345"):
-        return "Access granted"
-    else:
-        return "Access denied"
+    
+    # Using Ternary operation to conduct this if
+    return "Access granted" if (username == "admin" or username == "ADMIN") and password == "12345" else "Access denied"
+
+    # if((username == "admin" or username == "ADMIN") and password == "12345"):
+    #     return "Access granted"
+    # else:
+    #     return "Access denied"
 
 def hows_the_weather(temperature):
     # your code here
